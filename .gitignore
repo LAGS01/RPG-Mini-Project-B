@@ -1,4 +1,4 @@
-bin
-obj
-World/bin
-World/obj
+bin/
+obj/
+World/bin/
+World/obj/
