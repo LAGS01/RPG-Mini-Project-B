@@ -3,10 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace RPG_Mini_Project_B
-{
-    public static class World
-    {
+namespace RPG_Mini_Project_B {
+    public static class World {
         public static readonly List<Item> Items = new List<Item>();
         public static readonly List<Weapon> Weapons = new List<Weapon>();
         public static readonly List<Monster> Monsters = new List<Monster>();
@@ -44,8 +42,7 @@ namespace RPG_Mini_Project_B
         public const int LOCATION_ID_BRIDGE = 8;
         public const int LOCATION_ID_SPIDER_FIELD = 9;
 
-        static World()
-        {
+        static World() {
             PopulateItems();
             PopulateWeapons();
             PopulateMonsters();
@@ -53,8 +50,7 @@ namespace RPG_Mini_Project_B
             PopulateLocations();
         }
 
-        public static void PopulateItems()
-        {
+        public static void PopulateItems() {
             Items.Add(new Item(ITEM_ID_RAT_TAIL, "Rat tail", "Rat tails"));
             Items.Add(new Item(ITEM_ID_PIECE_OF_FUR, "Piece of fur", "Pieces of fur"));
             Items.Add(new Item(ITEM_ID_SNAKE_FANG, "Snake fang", "Snake fangs"));
@@ -65,14 +61,12 @@ namespace RPG_Mini_Project_B
             Items.Add(new Item(ITEM_ID_WINNERS_MEDAL, "Winner's medal", "winner's medals"));
         }
 
-        public static void PopulateWeapons()
-        {
+        public static void PopulateWeapons() {
             Weapons.Add(new Weapon(WEAPON_ID_RUSTY_SWORD, "Rusty sword", "Rusty swords", 0, 5));
             Weapons.Add(new Weapon(WEAPON_ID_CLUB, "Club", "Clubs", 3, 10));
         }
 
-        public static void PopulateMonsters()
-        {
+        public static void PopulateMonsters() {
             Monster rat = new Monster(MONSTER_ID_RAT, "rat", "rats", 5, 3, 10, 3, 3);
             rat.Loot.AddItem(ItemByID(ITEM_ID_RAT_TAIL));
             rat.Loot.AddItem(ItemByID(ITEM_ID_PIECE_OF_FUR));
@@ -90,8 +84,7 @@ namespace RPG_Mini_Project_B
             Monsters.Add(giantSpider);
         }
 
-        public static void PopulateQuests()
-        {
+        public static void PopulateQuests() {
             Quest clearAlchemistGarden =
                 new Quest(
                     QUEST_ID_CLEAR_ALCHEMIST_GARDEN,
@@ -127,8 +120,7 @@ namespace RPG_Mini_Project_B
             Quests.Add(clearSpidersForest);
         }
 
-        public static void PopulateLocations()
-        {
+        public static void PopulateLocations() {
             // Create each location
             Location home = new Location(LOCATION_ID_HOME, "Home", "Your house. You really need to clean up the place.", null, null, null);
 
@@ -192,12 +184,9 @@ namespace RPG_Mini_Project_B
             Locations.Add(spiderField);
         }
 
-        public static Location LocationByID(int id)
-        {
-            foreach (Location location in Locations)
-            {
-                if (location.ID == id)
-                {
+        public static Location LocationByID(int id) {
+            foreach (Location location in Locations) {
+                if (location.ID == id) {
                     return location;
                 }
             }
@@ -205,12 +194,9 @@ namespace RPG_Mini_Project_B
             return null;
         }
 
-        public static Weapon WeaponByID(int id)
-        {
-            foreach (Weapon item in Weapons)
-            {
-                if (item.ID == id)
-                {
+        public static Weapon WeaponByID(int id) {
+            foreach (Weapon item in Weapons) {
+                if (item.ID == id) {
                     return item;
                 }
             }
@@ -218,12 +204,9 @@ namespace RPG_Mini_Project_B
             return null;
         }
 
-        public static Item ItemByID(int id)
-        {
-            foreach (Item item in Items)
-            {
-                if (item.ID == id)
-                {
+        public static Item ItemByID(int id) {
+            foreach (Item item in Items) {
+                if (item.ID == id) {
                     return item;
                 }
             }
@@ -231,12 +214,9 @@ namespace RPG_Mini_Project_B
             return null;
         }
 
-        public static Monster MonsterByID(int id)
-        {
-            foreach (Monster monster in Monsters)
-            {
-                if (monster.ID == id)
-                {
+        public static Monster MonsterByID(int id) {
+            foreach (Monster monster in Monsters) {
+                if (monster.ID == id) {
                     return monster;
                 }
             }
@@ -244,12 +224,9 @@ namespace RPG_Mini_Project_B
             return null;
         }
 
-        public static Quest QuestByID(int id)
-        {
-            foreach (Quest quest in Quests)
-            {
-                if (quest.ID == id)
-                {
+        public static Quest QuestByID(int id) {
+            foreach (Quest quest in Quests) {
+                if (quest.ID == id) {
                     return quest;
                 }
             }
