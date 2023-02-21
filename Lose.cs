@@ -4,8 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 
 namespace RPG_Mini_Project_B {
-    public class LoseScreen {
-        public void Screen() {
+    public class Lose {
+        public void LoseScreen() {
             Console.ForegroundColor = ConsoleColor.DarkRed;
             string loseScreen = @"▓██   ██▓ ▒█████   █    ██     ▄▄▄       ██▀███  ▓█████     ██▓     ▒█████    ██████ ▓█████  ██▀███   ▐██▌ 
  ▒██  ██▒▒██▒  ██▒ ██  ▓██▒   ▒████▄    ▓██ ▒ ██▒▓█   ▀    ▓██▒    ▒██▒  ██▒▒██    ▒ ▓█   ▀ ▓██ ▒ ██▒ ▐██▌ 
