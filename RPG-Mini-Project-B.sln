@@ -3,9 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPG-Mini-Project-B", "RPG-Mini-Project-B.csproj", "{34BCCB91-EE9A-4636-AF06-422F127D4EF0}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "World", "World\World.csproj", "{1B828AA5-D500-4E5B-987A-5E1291CBADA7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPG-Mini-Project-B", "RPG-Mini-Project-B.csproj", "{DEAAA212-B60A-4D81-AE5D-DD3C27B95698}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -16,13 +14,9 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{34BCCB91-EE9A-4636-AF06-422F127D4EF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{34BCCB91-EE9A-4636-AF06-422F127D4EF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{34BCCB91-EE9A-4636-AF06-422F127D4EF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{34BCCB91-EE9A-4636-AF06-422F127D4EF0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1B828AA5-D500-4E5B-987A-5E1291CBADA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1B828AA5-D500-4E5B-987A-5E1291CBADA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1B828AA5-D500-4E5B-987A-5E1291CBADA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1B828AA5-D500-4E5B-987A-5E1291CBADA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEAAA212-B60A-4D81-AE5D-DD3C27B95698}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEAAA212-B60A-4D81-AE5D-DD3C27B95698}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEAAA212-B60A-4D81-AE5D-DD3C27B95698}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEAAA212-B60A-4D81-AE5D-DD3C27B95698}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
